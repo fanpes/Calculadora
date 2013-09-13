@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<head>
+	<title> Mi calculadora</title>
+	<script src="js/nucleo.js" type="text/Javascript">
+	</script>
+	<link href="estilos/estilo.css" rel="stylesheet" type="text/css" />
+	</head>	
+	<body>
+		<div id="calculadora">
+			<input type="text" value="0" id="pantalla" readonly="readonly" />
+			<div id=botones>
+				<input type="button" value="C" class="boton" onclick="accionEspecial('limpiar')"/>
+				<input type="button" value="1/X" class="boton" onclick="accionEspecial('inversa')"/>
+				<input type="button" value="√" class="boton" onclick="accionEspecial('raiz')"/>
+				<input type="button" value="±" class="boton" onclick="accionEspecial('negativo')"/><br/>
+				<input type="button" value="7" class="boton" onclick="agregarNumero(7)"/>
+				<input type="button" value="8" class="boton" onclick="agregarNumero(8)"/>
+				<input type="button" value="9" class="boton" onclick="agregarNumero(9)"/>
+				<input type="button" value="*" class="boton" onclick="activarOperador('Multiplica')" /><br/>
+				<input type="button" value="4" class="boton" onclick="agregarNumero(4)"/>
+				<input type="button" value="5" class="boton" onclick="agregarNumero(5)" />
+				<input type="button" value="6" class="boton" onclick="agregarNumero(6)" />
+				<input type="button" value="/" class="boton" onclick="activarOperador('Divide')"/><br/>
+				<input type="button" value="1" class="boton" onclick="agregarNumero(1)"/>
+				<input type="button" value="2" class="boton" onclick="agregarNumero(2)"/>
+				<input type="button" value="3" class="boton" onclick="agregarNumero(3)"/>
+				<input type="button" value="-" class="boton" onclick="activarOperador('Resta')" /><br/>
+				<input type="button" value="0" class="boton" onclick="agregarNumero(0)"/>
+				<input type="button" value="." class="boton" onclick="accionEspecial('Punto')"/>
+				<input type="button" value="+" class="boton" onclick="activarOperador('Suma')"/>
+				<input type="button" value="=" class="boton" onclick="botonIgual()" id="botonIgual"/>
+			</div>
+		</div>
+	</body>
+	
+</html>
